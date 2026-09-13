@@ -1,5 +1,5 @@
 const bookingConfig = {
-  bookingUrl: "https://calendly.com/your-account/creative-audit",
+  bookingUrl: "https://calendly.com/your-account/strategy-call",
   webhookUrl: ""
 };
 
@@ -37,7 +37,7 @@ document.getElementById("lead-form").addEventListener("submit", async (event) =>
   const form = event.currentTarget;
   const note = document.getElementById("form-note");
   const payload = Object.fromEntries(new FormData(form).entries());
-  payload.source = "leadsbysarang creative landing page";
+  payload.source = "leadsbysarang roofing lead generation page";
   payload.requestedAt = new Date().toISOString();
 
   if (!bookingConfig.webhookUrl) {
